@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("bg.jpg") center/cover no-repeat;
+  backdrop-filter: blur(8px);
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 3rem;
+  width: 500px;
+  box-shadow: 0 8px 32px #00000040;
+  border: 1px solid #ffffff2e;
+}
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.text-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  background: #ffffff26;
+  border-radius: 2rem;
+  padding: 0.3rem;
+}
+
+#input-box {
+  flex: 1;
+  color: #fff;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 1rem;
+  font-weight: 600;
+}
+#input-box::placeholder {
+  color: #ffffff99;
+  text-transform: capitalize;
+}
+
+#add {
+  border: none;
+  border-radius: 2rem;
+  outline: none;
+  padding: 0.8rem 1.5rem;
+  transition: 0.3s ease;
+  background: #ff2147;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#add:hover {
+  background: #1f1e1e;
+}
+
+.list {
+  margin-top: 1.5rem;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+#list-container {
+  list-style: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0;
+  position: relative;
+}
+
+#list-container li {
+  padding: 12px 45px 12px 45px;
+  margin-bottom: 0.7rem;
+  border-radius: 15px;
+  background: #ffffff14;
+  backdrop-filter: blur(8px);
+  position: relative;
+  color: #fff;
+  transform: 0.3s ease;
+}
+
+#list-container li:hover {
+  background: #ffffff26;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  top: 50%;
+  left: 12px;
+  background: url("uncheck.png") center/cover;
+  transform: translateY(-50%);
+}
+
+ul li.checked {
+  color: #000;
+  text-decoration: line-through #ff2147;
+}
+
+ul li.checked::before {
+  background: url("check.png") center/cover no-repeat;
+}
+
+ul li span {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ffffff33;
+  color: #fff;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+ul span:hover {
+  background: #ff0000b3;
+  color: #fff;
+}
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("bg.jpg") center/cover no-repeat;
+  backdrop-filter: blur(8px);
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 3rem;
+  width: 500px;
+  box-shadow: 0 8px 32px #00000040;
+  border: 1px solid #ffffff2e;
+}
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.text-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  background: #ffffff26;
+  border-radius: 2rem;
+  padding: 0.3rem;
+}
+
+#input-box {
+  flex: 1;
+  color: #fff;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 1rem;
+  font-weight: 600;
+}
+#input-box::placeholder {
+  color: #ffffff99;
+  text-transform: capitalize;
+}
+
+#add {
+  border: none;
+  border-radius: 2rem;
+  outline: none;
+  padding: 0.8rem 1.5rem;
+  transition: 0.3s ease;
+  background: #ff2147;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#add:hover {
+  background: #1f1e1e;
+}
+
+.list {
+  margin-top: 1.5rem;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+#list-container {
+  list-style: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0;
+  position: relative;
+}
+
+#list-container li {
+  padding: 12px 45px 12px 45px;
+  margin-bottom: 0.7rem;
+  border-radius: 15px;
+  background: #ffffff14;
+  backdrop-filter: blur(8px);
+  position: relative;
+  color: #fff;
+  transform: 0.3s ease;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  top: 50%;
+  left: 12px;
+  background: url("uncheck.png") center/cover;
+  transform: translateY(-50%);
+}
+
+ul li.checked {
+  color: #000;
+  text-decoration: line-through #ff2147;
+}
+
+ul li.checked::before {
+  background: url("check.png") center/cover no-repeat;
+}
+
+ul li span {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ffffff33;
+  color: #fff;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+ul span:hover {
+  background: #ff0000b3;
+  color: #fff;
+}
